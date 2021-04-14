@@ -12,12 +12,22 @@ else:
     print("Your name is not in the list")
 
 #Task 3
-new_name = input("What is your name?")
-replace = input("What name would you like to replace?")
+replace_name = input("Would you like to replace a name? ")
+if replace_name == "yes":
+    new_name = input("What is your name? ")
+    replace_names = input("What name would you like to replace? ")
+    index = names.index(replace_names)
+    index = new_name
+    print(names.replace(index, new_name))
 
-if new_name in names:
-    print("That name is already in the list")
-else:
-    replace
+#Task 4,adding a name
+
+add_name = input("Would you like to add a name? ")
+if add_name == "yes":
+    name_to_add = str(input("What name would you like to add? "))
+    names.append(name_to_add)
+    print(names)
+
+
 
 
