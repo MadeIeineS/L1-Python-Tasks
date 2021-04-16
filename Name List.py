@@ -11,14 +11,14 @@ if name in names:
 else:
     print("Your name is not in the list")
 
-#Task 3
+#Task 3, replacing a name
 replace_name = input("Would you like to replace a name? ")
 if replace_name == "yes":
     new_name = input("What is your name? ")
     replace_names = input("What name would you like to replace? ")
     index = names.index(replace_names)
-    index = new_name
-    print(names.replace(index, new_name))
+    names[index] = new_name
+    print(names)
 
 #Task 4,adding a name
 
@@ -27,7 +27,3 @@ if add_name == "yes":
     name_to_add = str(input("What name would you like to add? "))
     names.append(name_to_add)
     print(names)
-
-
-
-
